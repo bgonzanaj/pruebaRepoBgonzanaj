@@ -98,7 +98,7 @@ footer {
         display: flex;
         flex-direction: column;
         background-image: url('../imagenes/herobackground5mob.png');
-        height: 70vh;
+        height: 77vh;
         justify-content: center;
     }
 
@@ -395,6 +395,1461 @@ footer {
 
 }
 
-@media screen and (min-width: 600) and (max-width: 1023px) {
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    /* ESTILOS GENERALES */
+    .bodyIndex {
+        display: grid;
+        grid-template-columns: 50% 50%; 
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "header header"
+                             "main main"
+                             "footer footer";
+    }
+
+    /* NAV */
+    header {
+        grid-area: header;
+        background-color: #368ca7;
+        padding: 20px;
+        height: auto; 
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mainLogo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    nav ul  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 25px 0 0 0;
+        justify-content: space-evenly;
+        gap: 9px;
+    }
     
+    nav ul li {
+        list-style: none; 
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        font-weight: 600;
+        color: rgb(255, 248, 241);
+        font-family: 'Montserrat';
+        
+    }
+
+    /*HERO SECTION*/
+    .inicioMain {
+        background-color: rgb(255, 248, 241);
+    }
+
+    .heroSection {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../imagenes/herobackground5mob.png');
+        height: 90vh;
+        justify-content: center;
+    }
+
+    .heroMain {
+        margin: 20px 0 15px 0;
+        padding: 0 10px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: flex-end;
+        text-align: center;
+
+    }
+    .heroMain h1 {
+        font-size: 40px;
+        padding-bottom: 10px 0;
+        color: rgb(255, 248, 241);
+    }
+
+    .heroMain h2 {
+        font-size: 40px;
+        color: rgb(255, 248, 241);
+    }
+
+    .heroMain p {
+        font-size: 25px;
+        padding: 40px 0;
+        color: rgb(255, 248, 241);
+        font-weight: 500;
+    }
+
+    .heroImage {
+        display: none;
+    }
+
+    .mainButton {
+        padding: 15px 20px;
+        background-color: #368ca7;
+        color: rgb(255, 248, 241);
+        font-family: 'Montserrat Alternates';
+        font-size: 17px;
+        font-weight: 600;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mainButton:hover {
+        padding: 12px 17px;
+        background-color: rgb(255, 248, 241);
+        color: #368ca7;
+        border: 3px solid;
+        border-color: #368ca7;
+        transition: .2s;
+    }
+
+    /* PRODUCT SECTION */
+
+    .productSection {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas: "productText"
+                             "producto1" 
+                             "producto2" 
+                             "producto3"
+                             "producto4" 
+                             "producto5" 
+                             "producto6";
+        row-gap: 70px;
+    }
+
+    .productSection a {
+        text-decoration: none;
+    }
+
+    .producto1 {
+        grid-area: producto1;
+    }
+
+    .producto2 {
+        grid-area: producto2;
+    }
+
+    .producto3 {
+        grid-area: producto3;
+    }
+
+    .producto4 {
+        grid-area: producto4;
+    }
+
+    .producto5 {
+        grid-area: producto5;
+    }
+
+    .producto6 {
+        grid-area: producto6;
+    }
+
+    #productContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+        padding: 20px 30px;
+    }
+
+    #productContainer a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .productText {
+        grid-area: productText;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 70px 0 30px 0;
+    }
+
+    .productTittle {
+        font-size: 40px;
+    }
+
+    .productSubtittle {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    .imageProduct {
+        border-radius: 13px;
+        width: 300px;
+        height: 400px;
+    }
+
+    .tittleProduct {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .textProduct {
+        text-align: justify;
+        padding: 0 60px;
+    }
+
+
+    .loQuiero {
+        background-color: #368ca7;
+        color: rgb(255, 248, 241);
+        font-size: 15px;
+        font-weight: 600;
+        padding: 15px 30px;
+        margin-top: 40px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer; 
+    }
+
+    img {
+        width: 20px;
+    }
+
+    
+    /* VER MAS SECTION */
+    .verMas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url('../imagenes/pexels-nappy-936000mob.png');
+        background-size: cover;
+        height: 400px;
+        margin-top: 40px;
+    }
+
+    .textMas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .textMas h2 {
+        color: #f6f6f6;
+        font-size: 50px;
+        margin: 30px 0;
+    }
+
+    .imageMas {
+        display: none;
+    }
+
+    .imageMas1 {
+        width: 700px;
+        border-radius: 20px;
+
+    }
+
+    .buttonMas {
+        padding: 15px 20px;
+        background-color: #368ca7;
+        color: rgb(255, 248, 241);
+        font-family: 'Montserrat Alternates';
+        font-size: 17px;
+        font-weight: 600;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .whatsapp {
+        display: none;
+    }
+
+    /* FOOTER */
+
+    footer {
+        background-color: #368ca7;
+        padding: 0 15px;
+        display: grid;
+        height: auto;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 150px 200px 70px;
+        grid-template-areas: "redesFooter redesFooter"
+                             "logoFooter navFooter"
+                             "buttonFooter buttonFooter";
+    }
+    
+    .logoFooter {
+        grid-area: logoFooter;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logoFooter img {
+        width: 90px;
+
+    }
+    
+    .redesFooter {
+        grid-area: redesFooter;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .redes {
+        width: 40px;
+    }
+    
+    .navFooter {
+        grid-area: navFooter;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ulFooter {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .ulFooter li {
+        list-style: none;
+    }
+    
+    .ulFooter li a {
+        text-decoration: none;
+        color: #f6f6f6;
+        font-size: 17px;  
+        font-family: "Montserrat";  
+        font-weight: 600;
+    }
+    
+    .buttonFooter {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        font-family: 'Montserrat Alternates';
+        font-size: 17px;
+        color: #f6f6f6;
+        grid-area: buttonFooter;
+    }
+    
+    .buttonFooter a {
+        text-decoration: none;
+        color: #f6f6f6;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* ESTILOS GENERALES */
+    .bodyIndex {
+        display: grid;
+        grid-template-columns: 50% 50%; 
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "header header"
+                             "main main"
+                             "footer footer";
+    }
+
+    /* NAV */
+    header {
+        grid-area: header;
+        background-color: #368ca7;
+        padding: 20px;
+        height: auto; 
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mainLogo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    nav ul  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 25px 0 0 0;
+        justify-content: space-evenly;
+        gap: 9px;
+    }
+    
+    nav ul li {
+        list-style: none; 
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        font-weight: 600;
+        color: rgb(255, 248, 241);
+        font-family: 'Montserrat';
+        
+    }
+
+    /*HERO SECTION*/
+    .inicioMain {
+        background-color: rgb(255, 248, 241);
+    }
+
+    .heroSection {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../imagenes/herobackground5mob.png');
+        height: 90vh;
+        justify-content: center;
+    }
+
+    .heroMain {
+        margin: 20px 0 15px 0;
+        padding: 0 10px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: flex-end;
+        text-align: center;
+
+    }
+    .heroMain h1 {
+        font-size: 45px;
+        padding-bottom: 10px 0;
+        color: rgb(255, 248, 241);
+    }
+
+    .heroMain h2 {
+        font-size: 50px;
+        color: rgb(255, 248, 241);
+    }
+
+    .heroMain p {
+        font-size: 30px;
+        padding: 40px 0;
+        color: rgb(255, 248, 241);
+        font-weight: 500;
+    }
+
+    .heroImage {
+        display: none;
+    }
+
+    .mainButton {
+        padding: 15px 20px;
+        background-color: #368ca7;
+        color: rgb(255, 248, 241);
+        font-family: 'Montserrat Alternates';
+        font-size: 17px;
+        font-weight: 600;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mainButton:hover {
+        padding: 12px 17px;
+        background-color: rgb(255, 248, 241);
+        color: #368ca7;
+        border: 3px solid;
+        border-color: #368ca7;
+        transition: .2s;
+    }
+
+    /* PRODUCT SECTION */
+
+    .productSection {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "productText productText"
+                             "producto1 producto2" 
+                             "producto3 producto4" 
+                             "producto5 producto6";
+        row-gap: 70px;
+    }
+
+    .productSection a {
+        text-decoration: none;
+    }
+
+    .producto1 {
+        grid-area: producto1;
+    }
+
+    .producto2 {
+        grid-area: producto2;
+    }
+
+    .producto3 {
+        grid-area: producto3;
+    }
+
+    .producto4 {
+        grid-area: producto4;
+    }
+
+    .producto5 {
+        grid-area: producto5;
+    }
+
+    .producto6 {
+        grid-area: producto6;
+    }
+
+    #productContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+        padding: 20px 30px;
+    }
+
+    #productContainer a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .productText {
+        grid-area: productText;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 70px 0 30px 0;
+    }
+
+    .productTittle {
+        font-size: 40px;
+    }
+
+    .productSubtittle {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    .imageProduct {
+        border-radius: 13px;
+        width: 300px;
+        height: 400px;
+    }
+
+    .tittleProduct {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .textProduct {
+        text-align: justify;
+        padding: 0 60px;
+    }
+
+
+    .loQuiero {
+        background-color: #368ca7;
+        color: rgb(255, 248, 241);
+        font-size: 15px;
+        font-weight: 600;
+        padding: 15px 30px;
+        margin-top: 40px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer; 
+    }
+
+    img {
+        width: 20px;
+    }
+
+    
+    /* VER MAS SECTION */
+    .verMas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url('../imagenes/pexels-nappy-936000mob.png');
+        background-size: cover;
+        height: 400px;
+        margin-top: 40px;
+    }
+
+    .textMas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .textMas h2 {
+        color: #f6f6f6;
+        font-size: 50px;
+        margin: 30px 0;
+    }
+
+    .imageMas {
+        display: none;
+    }
+
+    .imageMas1 {
+        width: 700px;
+        border-radius: 20px;
+
+    }
+
+    .buttonMas {
+        padding: 15px 20px;
+        background-color: #368ca7;
+        color: rgb(255, 248, 241);
+        font-family: 'Montserrat Alternates';
+        font-size: 17px;
+        font-weight: 600;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .whatsapp {
+        width: 40px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 0 10px 15px 0; 
+    }
+
+    /* FOOTER */
+
+    footer {
+        background-color: #368ca7;
+        padding: 0 15px;
+        display: grid;
+        height: auto;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 150px 200px 70px;
+        grid-template-areas: "redesFooter redesFooter"
+                             "logoFooter navFooter"
+                             "buttonFooter buttonFooter";
+    }
+    
+    .logoFooter {
+        grid-area: logoFooter;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logoFooter img {
+        width: 90px;
+
+    }
+    
+    .redesFooter {
+        grid-area: redesFooter;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .redes {
+        width: 40px;
+    }
+    
+    .navFooter {
+        grid-area: navFooter;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ulFooter {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .ulFooter li {
+        list-style: none;
+    }
+    
+    .ulFooter li a {
+        text-decoration: none;
+        color: #f6f6f6;
+        font-size: 17px;  
+        font-family: "Montserrat";  
+        font-weight: 600;
+    }
+    
+    .buttonFooter {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        font-family: 'Montserrat Alternates';
+        font-size: 17px;
+        color: #f6f6f6;
+        grid-area: buttonFooter;
+    }
+    
+    .buttonFooter a {
+        text-decoration: none;
+        color: #f6f6f6;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1999px) {
+     /* ESTILOS GENERALES */
+     .bodyIndex {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "header header header"
+                             "main main main"
+                             "footer footer footer";
+    }
+
+    /* NAV */
+    header {
+        grid-area: header;
+        background-color: #368ca7;
+        height: auto; 
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        width: 70px;
+        margin-left: 60px;
+        margin-top: 2px;
+    }
+    
+    nav ul  {
+        display: flex;
+        align-items: center;
+        margin-right: 80px;
+    }
+    
+    nav ul li {
+        list-style: none; 
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        font-weight: 600;
+        color: rgb(255, 248, 241);
+        font-family: 'Montserrat';
+        margin: 0px 10px;
+        padding: 25px 20px;
+    }
+    
+    nav ul li :hover {
+        background-color: rgb(255, 248, 241);
+        color: #368ca7;
+        transition: .1s;
+    }
+
+    /*HERO SECTION*/
+    .inicioMain {
+        background-color: rgb(255, 248, 241);
+    }
+
+    .heroSection {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../imagenes/herobackground5mob.png');
+        height: 95vh;
+        justify-content: center;
+    }
+
+    .heroMain {
+        margin: 20px 0 15px 0;
+        padding: 0 10px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: flex-end;
+        text-align: center;
+
+    }
+    .heroMain h1 {
+        font-size: 60px;
+        padding-bottom: 10px 0;
+        color: rgb(255, 248, 241);
+    }
+
+    .heroMain h2 {
+        font-size: 70px;
+        color: rgb(255, 248, 241);
+    }
+
+    .heroMain p {
+        font-size: 25px;
+        padding: 40px 0;
+        color: rgb(255, 248, 241);
+        font-weight: 500;
+    }
+
+    .heroImage {
+        display: none;
+    }
+
+    .mainButton {
+        padding: 15px 20px;
+        background-color: #368ca7;
+        color: rgb(255, 248, 241);
+        font-family: 'Montserrat Alternates';
+        font-size: 17px;
+        font-weight: 600;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mainButton:hover {
+        padding: 12px 17px;
+        background-color: rgb(255, 248, 241);
+        color: #368ca7;
+        border: 3px solid;
+        border-color: #368ca7;
+        transition: .2s;
+    }
+
+    /* PRODUCT SECTION */
+
+    .productSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "productText productText productText"
+                             "producto1 producto2 producto3" 
+                             "producto4 producto5 producto6";
+        row-gap: 70px;
+    }
+
+    .productSection a {
+        text-decoration: none;
+    }
+
+    .producto1 {
+        grid-area: producto1;
+    }
+
+    .producto2 {
+        grid-area: producto2;
+    }
+
+    .producto3 {
+        grid-area: producto3;
+    }
+
+    .producto4 {
+        grid-area: producto4;
+    }
+
+    .producto5 {
+        grid-area: producto5;
+    }
+
+    .producto6 {
+        grid-area: producto6;
+    }
+
+    #productContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    #productContainer a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .productText {
+        grid-area: productText;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 70px 0 30px 0;
+    }
+
+    .productTittle {
+        font-size: 55px;
+    }
+
+    .productSubtittle {
+        margin-top: 20px;
+        font-size: 35px;
+    }
+
+    .imageProduct {
+        border-radius: 13px;
+        width: 300px;
+        height: 400px;
+    }
+
+    .tittleProduct {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .textProduct {
+        text-align: justify;
+        padding: 0 30px;
+    }
+
+
+    .loQuiero {
+        background-color: #368ca7;
+        color: rgb(255, 248, 241);
+        font-size: 15px;
+        font-weight: 600;
+        padding: 15px 30px;
+        margin-top: 40px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer; 
+    }
+
+    .loQuiero:hover {
+        background-color: rgb(255, 248, 241);
+        color: #368ca7;
+        border: 2px solid;
+        border-color: #368ca7;
+        transition: all .2s;
+    }
+
+    img {
+        width: 20px;
+    }
+
+    
+    /* VER MAS SECTION */
+    .verMas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url('../imagenes/pexels-nappy-936000mob.png');
+        background-size: cover;
+        height: 600px;
+        margin-top: 40px;
+    }
+
+    .textMas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .textMas h2 {
+        color: #f6f6f6;
+        font-size: 60px;
+        margin: 30px 0;
+    }
+
+    .imageMas {
+        display: none;
+    }
+
+    .imageMas1 {
+        width: 700px;
+        border-radius: 20px;
+
+    }
+
+    .buttonMas {
+        padding: 15px 20px;
+        background-color: #368ca7;
+        color: rgb(255, 248, 241);
+        font-family: 'Montserrat Alternates';
+        font-size: 17px;
+        font-weight: 600;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .buttonMas:hover {
+        padding: 12px 17px;
+        background-color: rgb(255, 248, 241);
+        color: #368ca7;
+        border: 3px solid;
+        border-color: #368ca7;
+        transition: .2s;
+    }
+
+    .whatsapp {
+        width: 50px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 0 10px 15px 0; 
+    }
+
+    /* FOOTER */
+
+    footer {
+        background-color: #368ca7;
+        padding: 0 15px;
+        display: grid;
+        height: auto;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 150px 200px 70px;
+        grid-template-areas: "redesFooter redesFooter"
+                             "logoFooter navFooter"
+                             "buttonFooter buttonFooter";
+    }
+    
+    .logoFooter {
+        grid-area: logoFooter;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logoFooter img {
+        width: 90px;
+    }
+    
+    .redesFooter {
+        grid-area: redesFooter;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .redes {
+        width: 40px;
+    }
+    
+    .navFooter {
+        grid-area: navFooter;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 10%;
+    }
+    
+    .ulFooter {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .ulFooter li {
+        list-style: none;
+    }
+    
+    .ulFooter li a {
+        text-decoration: none;
+        color: #f6f6f6;
+        font-size: 17px;  
+        font-family: "Montserrat";  
+        font-weight: 600;
+    }
+    
+    .buttonFooter {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        font-family: 'Montserrat Alternates';
+        font-size: 17px;
+        color: #f6f6f6;
+        grid-area: buttonFooter;
+    }
+    
+    .buttonFooter a {
+        text-decoration: none;
+        color: #f6f6f6;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* ESTILOS GENERALES */
+    .bodyIndex {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "header header header"
+                             "main main main"
+                             "footer footer footer";
+    }
+
+    /* NAV */
+    header {
+        grid-area: header;
+        background-color: #368ca7;
+        height: auto; 
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        width: 70px;
+        margin-left: 60px;
+        margin-top: 2px;
+    }
+    
+    nav ul  {
+        display: flex;
+        align-items: center;
+        margin-right: 80px;
+    }
+    
+    nav ul li {
+        list-style: none; 
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        font-weight: 600;
+        color: rgb(255, 248, 241);
+        font-family: 'Montserrat';
+        margin: 0px 10px;
+        padding: 25px 20px;
+    }
+    
+    nav ul li :hover {
+        background-color: rgb(255, 248, 241);
+        color: #368ca7;
+        transition: .1s;
+    }
+
+    /*HERO SECTION*/
+    .inicioMain {
+        background-color: rgb(255, 248, 241);
+    }
+
+    .heroSection {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../imagenes/herobackground5mob.png');
+        height: 95vh;
+        justify-content: center;
+    }
+
+    .heroMain {
+        margin: 20px 0 15px 0;
+        padding: 0 10px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: flex-end;
+        text-align: center;
+
+    }
+    .heroMain h1 {
+        font-size: 60px;
+        padding-bottom: 10px 0;
+        color: rgb(255, 248, 241);
+    }
+
+    .heroMain h2 {
+        font-size: 70px;
+        color: rgb(255, 248, 241);
+    }
+
+    .heroMain p {
+        font-size: 25px;
+        padding: 40px 0;
+        color: rgb(255, 248, 241);
+        font-weight: 500;
+    }
+
+    .heroImage {
+        display: none;
+    }
+
+    .mainButton {
+        padding: 15px 20px;
+        background-color: #368ca7;
+        color: rgb(255, 248, 241);
+        font-family: 'Montserrat Alternates';
+        font-size: 17px;
+        font-weight: 600;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mainButton:hover {
+        padding: 12px 17px;
+        background-color: rgb(255, 248, 241);
+        color: #368ca7;
+        border: 3px solid;
+        border-color: #368ca7;
+        transition: .2s;
+    }
+
+    /* PRODUCT SECTION */
+
+    .productSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "productText productText productText"
+                             "producto1 producto2 producto3" 
+                             "producto4 producto5 producto6";
+        row-gap: 70px;
+    }
+
+    .productSection a {
+        text-decoration: none;
+    }
+
+    .producto1 {
+        grid-area: producto1;
+    }
+
+    .producto2 {
+        grid-area: producto2;
+    }
+
+    .producto3 {
+        grid-area: producto3;
+    }
+
+    .producto4 {
+        grid-area: producto4;
+    }
+
+    .producto5 {
+        grid-area: producto5;
+    }
+
+    .producto6 {
+        grid-area: producto6;
+    }
+
+    #productContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+        padding: 20px 20px;
+    }
+
+    #productContainer a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .productText {
+        grid-area: productText;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 70px 0 30px 0;
+    }
+
+    .productTittle {
+        font-size: 55px;
+    }
+
+    .productSubtittle {
+        margin-top: 20px;
+        font-size: 35px;
+    }
+
+    .imageProduct {
+        border-radius: 13px;
+        width: 300px;
+        height: 400px;
+    }
+
+    .tittleProduct {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .textProduct {
+        text-align: justify;
+        padding: 0 30px;
+    }
+
+
+    .loQuiero {
+        background-color: #368ca7;
+        color: rgb(255, 248, 241);
+        font-size: 15px;
+        font-weight: 600;
+        padding: 15px 30px;
+        margin-top: 40px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer; 
+    }
+
+    .loQuiero:hover {
+        background-color: rgb(255, 248, 241);
+        color: #368ca7;
+        border: 2px solid;
+        border-color: #368ca7;
+        transition: all .2s;
+    }
+
+    
+    /* VER MAS SECTION */
+    .verMas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url('../imagenes/pexels-nappy-936000mob.png');
+        background-size: cover;
+        height: 800px;
+        margin-top: 40px;
+    }
+
+    .textMas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .textMas h2 {
+        color: #f6f6f6;
+        font-size: 60px;
+        margin: 30px 0;
+    }
+
+    .imageMas {
+        display: none;
+    }
+
+    .imageMas1 {
+        width: 700px;
+        border-radius: 20px;
+
+    }
+
+    .buttonMas {
+        padding: 15px 20px;
+        background-color: #368ca7;
+        color: rgb(255, 248, 241);
+        font-family: 'Montserrat Alternates';
+        font-size: 17px;
+        font-weight: 600;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .buttonMas:hover {
+        padding: 12px 17px;
+        background-color: rgb(255, 248, 241);
+        color: #368ca7;
+        border: 3px solid;
+        border-color: #368ca7;
+        transition: .2s;
+    }
+
+    .whatsapp {
+        width: 50px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 0 10px 15px 0; 
+    }
+
+    /* FOOTER */
+
+    footer {
+        background-color: #368ca7;
+        padding: 0 15px;
+        display: grid;
+        height: auto;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 150px 200px 70px;
+        grid-template-areas: "redesFooter redesFooter"
+                             "logoFooter navFooter"
+                             "buttonFooter buttonFooter";
+    }
+    
+    .logoFooter {
+        grid-area: logoFooter;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logoFooter img {
+        width: 90px;
+    }
+    
+    .redesFooter {
+        grid-area: redesFooter;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .redes {
+        width: 40px;
+    }
+    
+    .navFooter {
+        grid-area: navFooter;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 10%;
+    }
+    
+    .ulFooter {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .ulFooter li {
+        list-style: none;
+    }
+    
+    .ulFooter li a {
+        text-decoration: none;
+        color: #f6f6f6;
+        font-size: 17px;  
+        font-family: "Montserrat";  
+        font-weight: 600;
+    }
+    
+    .buttonFooter {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        font-family: 'Montserrat Alternates';
+        font-size: 17px;
+        color: #f6f6f6;
+        grid-area: buttonFooter;
+    }
+    
+    .buttonFooter a {
+        text-decoration: none;
+        color: #f6f6f6;
+    }
 }
