@@ -1,4 +1,4 @@
-/* ESTILOS GENERALES */
+/* ESTILOS GENERALES PAGINA */
 * {
     padding: 0;
     margin: 0;
@@ -12,31 +12,386 @@ h3, p {
     font-family: 'Rubik';
 }
 
-.bodyIndex {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "header header header"
-                         "main main main"
-                         "footer footer footer";
-}
-
 header {
     grid-area: header;
     background-color: #368ca7;
-    padding: 3px; 
+    padding: 3px;
+    height: auto; 
 }
 
 main {
     grid-area: main;
+    background-color: rgb(255, 248, 241);
 }
 
 footer {
     grid-area: footer;
 }
 
+/* ESTILOS GENERALES NAV */
+nav {
+    display: flex;
+}
 
+.logo {
+    width: 60px;
+}
+
+nav ul li {
+    list-style: none; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(255, 248, 241);
+    font-family: 'Montserrat';
+}
+
+
+/* ---------------------------------INDEX--------------------------------- */
+/* ESTILOS GENERALES HERO */
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../imagenes/herobackground5mob.png');
+    justify-content: center;
+}
+.heroMain {
+    margin: 20px 0 15px 0;
+    padding: 0 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+    text-align: center;
+}
+
+.heroMain h1 {
+    padding-bottom: 10px 0;
+    color: rgb(255, 248, 241);
+}
+
+.heroMain h2 {
+    color: rgb(255, 248, 241);
+}
+
+.heroMain p {
+    padding: 40px 0;
+    color: rgb(255, 248, 241);
+    font-weight: 500;
+}
+
+.mainButton {
+    padding: 15px 20px;
+    background-color: #368ca7;
+    color: rgb(255, 248, 241);
+    font-family: 'Montserrat Alternates';
+    font-weight: 600;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+/* GENERALES PRODUCT */
+.productSection a {
+    text-decoration: none;
+}
+
+.producto1 {
+    grid-area: producto1;
+}
+
+.producto2 {
+    grid-area: producto2;
+}
+
+.producto3 {
+    grid-area: producto3;
+}
+
+.producto4 {
+    grid-area: producto4;
+}
+
+.producto5 {
+    grid-area: producto5;
+}
+
+.producto6 {
+    grid-area: producto6;
+}
+
+#productContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+#productContainer a {
+    display: flex;
+    justify-content: center;
+}
+
+.productText {
+    grid-area: productText;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 70px 0 30px 0;
+}
+
+.productTittle {
+    font-size: 40px;
+}
+
+.productSubtittle {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.imageProduct {
+    border-radius: 13px;
+    width: 300px;
+    height: 400px;
+}
+
+.tittleProduct {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.textProduct {
+    text-align: justify;
+    padding: 0 30px;
+}
+
+.loQuiero {
+    background-color: #368ca7;
+    color: rgb(255, 248, 241);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 30px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer; 
+}
+
+/* GENERALES VER MAS */
+.verMas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../imagenes/pexels-nappy-936000mob.png');
+    background-size: cover;
+    height: 400px;
+    margin-top: 40px;
+}
+
+.textMas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.textMas h2 {
+    color: #f6f6f6;
+    font-size: 50px;
+    margin: 30px 0;
+}
+
+.buttonMas {
+    padding: 15px 20px;
+    background-color: #368ca7;
+    color: rgb(255, 248, 241);
+    font-family: 'Montserrat Alternates';
+    font-weight: 600;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+/* GENERALES WHATSAPP */
+.whatsapp {
+    width: 50px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 0 10px 15px 0; 
+}
+
+/* GENERALES FOOTER */
+.logoFooter {
+    grid-area: logoFooter;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logoFooter img {
+    width: 90px;
+    margin-left: 15%;
+}
+
+.redesFooter {
+    grid-area: redesFooter;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.redes {
+    width: 40px;
+    
+}
+
+.navFooter {
+    grid-area: navFooter;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ulFooter {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.ulFooter li {
+    list-style: none;
+}
+
+.ulFooter li a {
+     text-decoration: none;
+     color: #f6f6f6;
+     font-size: 20px;  
+     font-family: "Montserrat";  
+     font-weight: 600;
+}
+
+.buttonFooter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: 'Montserrat Alternates';
+    font-size: 17px;
+    color: #f6f6f6;
+    grid-area: buttonFooter;
+}
+
+.buttonFooter a {
+    text-decoration: none;
+    color: #f6f6f6;
+}
+
+
+/* -----------------------------MENU------------------------------ */
+/* GENERALES MENU */
+#productContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuText {
+    grid-area: menuText;
+    margin-bottom: 70px;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.productContainer1 {
+    grid-area: productContainer1;
+}
+
+.productContainer2 {
+    grid-area: productContainer2;
+}
+
+.productContainer3 {
+    grid-area: productContainer3;
+}
+
+.productContainer4 {
+    grid-area: productContainer4;
+}
+
+.productContainer5 {
+    grid-area: productContainer5;
+}
+
+.productContainer6 {
+    grid-area: productContainer6;
+}
+
+.productContainer7 {
+    grid-area: productContainer7;
+}
+
+.productContainer8 {
+    grid-area: productContainer8;
+}
+
+.productContainer9 {
+    grid-area: productContainer9;
+}
+
+.productContainer10 {
+    grid-area: productContainer10;
+}
+
+.productContainer11 {
+    grid-area: productContainer11;
+}
+
+.productContainer12 {
+    grid-area: productContainer12;
+}
+
+.productContainer13 {
+    grid-area: productContainer13;
+}
+
+.productContainer14 {
+    grid-area: productContainer14;
+}
+
+.productContainer15 {
+    grid-area: productContainer15;
+}
+
+.productContainer16 {
+    grid-area: productContainer16;
+}
+
+.productContainer17 {
+    grid-area: productContainer17;
+}
+
+.productContainer18 {
+    grid-area: productContainer18;
+}
+
+.menuTittle {
+    font-size: 40px;
+    padding: 0 10px;
+}
+
+
+/* QUERY PARA MOVILES */
 @media screen and (min-width: 320px) and (max-width: 599px) {
+    /* --------------------------INDEX------------------------ */
     /* ESTILOS GENERALES */
     .bodyIndex {
         display: grid;
@@ -49,14 +404,10 @@ footer {
 
     /* NAV */
     header {
-        grid-area: header;
-        background-color: #368ca7;
-        padding: 20px;
-        height: auto; 
+        padding: 20px; 
     }
 
     nav {
-        display: flex;
         flex-direction: column;
     }
 
@@ -65,9 +416,6 @@ footer {
         justify-content: center;
     }
 
-    .logo {
-        width: 60px;
-    }
     nav ul  {
         display: flex;
         flex-direction: column;
@@ -77,82 +425,26 @@ footer {
         gap: 9px;
     }
     
-    nav ul li {
-        list-style: none; 
-    }
-    
-    nav ul li a {
-        text-decoration: none;
-        font-weight: 600;
-        color: rgb(255, 248, 241);
-        font-family: 'Montserrat';
-        
-    }
 
     /*HERO SECTION*/
-    .inicioMain {
-        background-color: rgb(255, 248, 241);
-    }
-
     .heroSection {
-        display: flex;
-        flex-direction: column;
-        background-image: url('../imagenes/herobackground5mob.png');
         height: 77vh;
-        justify-content: center;
     }
 
-    .heroMain {
-        margin: 20px 0 15px 0;
-        padding: 0 10px; 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: flex-end;
-        text-align: center;
-
-    }
     .heroMain h1 {
         font-size: 30px;
-        padding-bottom: 10px 0;
-        color: rgb(255, 248, 241);
     }
 
     .heroMain h2 {
         font-size: 40px;
-        color: rgb(255, 248, 241);
     }
 
     .heroMain p {
-        font-size: 25px;
-        padding: 40px 0;
-        color: rgb(255, 248, 241);
-        font-weight: 500;
-    }
-
-    .heroImage {
-        display: none;
+        font-size: 25px;  
     }
 
     .mainButton {
-        padding: 15px 20px;
-        background-color: #368ca7;
-        color: rgb(255, 248, 241);
-        font-family: 'Montserrat Alternates';
-        font-size: 17px;
-        font-weight: 600;
-        border-radius: 25px;
-        border: none;
-        cursor: pointer;
-    }
-
-    .mainButton:hover {
-        padding: 12px 17px;
-        background-color: rgb(255, 248, 241);
-        color: #368ca7;
-        border: 3px solid;
-        border-color: #368ca7;
-        transition: .2s;
+        font-size: 13px;
     }
 
     /* PRODUCT SECTION */
@@ -171,144 +463,12 @@ footer {
         row-gap: 70px;
     }
 
-    .productSection a {
-        text-decoration: none;
-    }
-
-    .producto1 {
-        grid-area: producto1;
-    }
-
-    .producto2 {
-        grid-area: producto2;
-    }
-
-    .producto3 {
-        grid-area: producto3;
-    }
-
-    .producto4 {
-        grid-area: producto4;
-    }
-
-    .producto5 {
-        grid-area: producto5;
-    }
-
-    .producto6 {
-        grid-area: producto6;
-    }
-
-    #productContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: stretch;
-        align-items: center;
-        padding: 20px 30px;
-    }
-
-    #productContainer a {
-        display: flex;
-        justify-content: center;
-    }
-
-    .productText {
-        grid-area: productText;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: 70px 0 30px 0;
-    }
-
-    .productTittle {
-        font-size: 40px;
-    }
-
-    .productSubtittle {
-        margin-top: 20px;
-        font-size: 25px;
-    }
-
-    .imageProduct {
-        border-radius: 13px;
-        width: 300px;
-        height: 400px;
-    }
-
-    .tittleProduct {
-        margin: 20px 0;
-        text-align: center;
-    }
-
-    .textProduct {
-        text-align: justify;
-    }
-
-
-    .loQuiero {
-        background-color: #368ca7;
-        color: rgb(255, 248, 241);
-        font-size: 15px;
-        font-weight: 600;
-        padding: 15px 30px;
-        margin-top: 40px;
-        border: none;
-        border-radius: 25px;
-        cursor: pointer; 
-    }
-
-    img {
-        width: 20px;
-    }
-
-    
     /* VER MAS SECTION */
-    .verMas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-image: url('../imagenes/pexels-nappy-936000mob.png');
-        background-size: cover;
-        height: 400px;
-        margin-top: 40px;
-    }
-
-    .textMas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .textMas h2 {
-        color: #f6f6f6;
-        font-size: 50px;
-        margin: 30px 0;
-    }
-
-    .imageMas {
-        display: none;
-    }
-
-    .imageMas1 {
-        width: 700px;
-        border-radius: 20px;
-
-    }
-
     .buttonMas {
-        padding: 15px 20px;
-        background-color: #368ca7;
-        color: rgb(255, 248, 241);
-        font-family: 'Montserrat Alternates';
-        font-size: 17px;
-        font-weight: 600;
-        border-radius: 25px;
-        border: none;
-        cursor: pointer;
+        font-size: 13px;
     }
 
+    /* WHATSAPP */
     .whatsapp {
         display: none;
     }
@@ -326,75 +486,42 @@ footer {
                              "logoFooter navFooter"
                              "buttonFooter buttonFooter";
     }
-    
-    .logoFooter {
-        grid-area: logoFooter;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    
-    .logoFooter img {
-        width: 90px;
-    }
-    
-    .redesFooter {
-        grid-area: redesFooter;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    
-    .redes {
-        width: 40px;
-        
-    }
-    
-    .navFooter {
-        grid-area: navFooter;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    
+
     .ulFooter {
-        display: flex;
         flex-direction: column;
         align-items: flex-end;
-        gap: 5px;
-    }
-    
-    .ulFooter li {
-        list-style: none;
-    }
-    
-    .ulFooter li a {
-         text-decoration: none;
-         color: #f6f6f6;
-         font-size: 20px;  
-         font-family: "Montserrat";  
-         font-weight: 600;
-    }
-    
-    .buttonFooter {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        font-family: 'Montserrat Alternates';
-        font-size: 17px;
-        color: #f6f6f6;
-        grid-area: buttonFooter;
-    }
-    
-    .buttonFooter a {
-        text-decoration: none;
-        color: #f6f6f6;
     }
 
-
+    /* ------------------------------MENU------------------------------ */
+    .menuMain {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: "menuText"
+                             "productContainer1"
+                             "productContainer2"
+                             "productContainer3"
+                             "productContainer4"
+                             "productContainer5"
+                             "productContainer6"
+                             "productContainer7"
+                             "productContainer8"
+                             "productContainer9"
+                             "productContainer10"
+                             "productContainer11"
+                             "productContainer12"
+                             "productContainer13"
+                             "productContainer14"
+                             "productContainer15"
+                             "productContainer16"
+                             "productContainer17"
+                             "productContainer18";
+        row-gap: 40px; 
+        margin-bottom: 70px;
+    }
 }
 
+/* QUERY PARA TABLETAS PEQUEÑAS */
 @media screen and (min-width: 600px) and (max-width: 767px) {
     /* ESTILOS GENERALES */
     .bodyIndex {
@@ -408,24 +535,16 @@ footer {
 
     /* NAV */
     header {
-        grid-area: header;
-        background-color: #368ca7;
         padding: 20px;
-        height: auto; 
     }
 
     nav {
-        display: flex;
         flex-direction: column;
     }
 
     #mainLogo {
         display: flex;
         justify-content: center;
-    }
-
-    .logo {
-        width: 60px;
     }
 
     nav ul  {
@@ -436,83 +555,26 @@ footer {
         justify-content: space-evenly;
         gap: 9px;
     }
-    
-    nav ul li {
-        list-style: none; 
-    }
-    
-    nav ul li a {
-        text-decoration: none;
-        font-weight: 600;
-        color: rgb(255, 248, 241);
-        font-family: 'Montserrat';
-        
-    }
 
     /*HERO SECTION*/
-    .inicioMain {
-        background-color: rgb(255, 248, 241);
-    }
-
     .heroSection {
-        display: flex;
-        flex-direction: column;
-        background-image: url('../imagenes/herobackground5mob.png');
         height: 90vh;
-        justify-content: center;
     }
 
-    .heroMain {
-        margin: 20px 0 15px 0;
-        padding: 0 10px; 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: flex-end;
-        text-align: center;
-
-    }
     .heroMain h1 {
         font-size: 40px;
-        padding-bottom: 10px 0;
-        color: rgb(255, 248, 241);
     }
 
     .heroMain h2 {
         font-size: 40px;
-        color: rgb(255, 248, 241);
     }
 
     .heroMain p {
         font-size: 25px;
-        padding: 40px 0;
-        color: rgb(255, 248, 241);
-        font-weight: 500;
-    }
-
-    .heroImage {
-        display: none;
     }
 
     .mainButton {
-        padding: 15px 20px;
-        background-color: #368ca7;
-        color: rgb(255, 248, 241);
-        font-family: 'Montserrat Alternates';
-        font-size: 17px;
-        font-weight: 600;
-        border-radius: 25px;
-        border: none;
-        cursor: pointer;
-    }
-
-    .mainButton:hover {
-        padding: 12px 17px;
-        background-color: rgb(255, 248, 241);
-        color: #368ca7;
-        border: 3px solid;
-        border-color: #368ca7;
-        transition: .2s;
+        font-size: 14px;
     }
 
     /* PRODUCT SECTION */
@@ -530,144 +592,10 @@ footer {
                              "producto6";
         row-gap: 70px;
     }
-
-    .productSection a {
-        text-decoration: none;
-    }
-
-    .producto1 {
-        grid-area: producto1;
-    }
-
-    .producto2 {
-        grid-area: producto2;
-    }
-
-    .producto3 {
-        grid-area: producto3;
-    }
-
-    .producto4 {
-        grid-area: producto4;
-    }
-
-    .producto5 {
-        grid-area: producto5;
-    }
-
-    .producto6 {
-        grid-area: producto6;
-    }
-
-    #productContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: stretch;
-        align-items: center;
-        padding: 20px 30px;
-    }
-
-    #productContainer a {
-        display: flex;
-        justify-content: center;
-    }
-
-    .productText {
-        grid-area: productText;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: 70px 0 30px 0;
-    }
-
-    .productTittle {
-        font-size: 40px;
-    }
-
-    .productSubtittle {
-        margin-top: 20px;
-        font-size: 25px;
-    }
-
-    .imageProduct {
-        border-radius: 13px;
-        width: 300px;
-        height: 400px;
-    }
-
-    .tittleProduct {
-        margin: 20px 0;
-        text-align: center;
-    }
-
-    .textProduct {
-        text-align: justify;
-        padding: 0 60px;
-    }
-
-
-    .loQuiero {
-        background-color: #368ca7;
-        color: rgb(255, 248, 241);
-        font-size: 15px;
-        font-weight: 600;
-        padding: 15px 30px;
-        margin-top: 40px;
-        border: none;
-        border-radius: 25px;
-        cursor: pointer; 
-    }
-
-    img {
-        width: 20px;
-    }
-
-    
+ 
     /* VER MAS SECTION */
-    .verMas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-image: url('../imagenes/pexels-nappy-936000mob.png');
-        background-size: cover;
-        height: 400px;
-        margin-top: 40px;
-    }
-
-    .textMas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .textMas h2 {
-        color: #f6f6f6;
-        font-size: 50px;
-        margin: 30px 0;
-    }
-
-    .imageMas {
-        display: none;
-    }
-
-    .imageMas1 {
-        width: 700px;
-        border-radius: 20px;
-
-    }
-
     .buttonMas {
-        padding: 15px 20px;
-        background-color: #368ca7;
-        color: rgb(255, 248, 241);
-        font-family: 'Montserrat Alternates';
-        font-size: 17px;
-        font-weight: 600;
-        border-radius: 25px;
-        border: none;
-        cursor: pointer;
+        font-size: 15px;
     }
 
     .whatsapp {
@@ -688,70 +616,45 @@ footer {
                              "buttonFooter buttonFooter";
     }
     
-    .logoFooter {
-        grid-area: logoFooter;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .logoFooter img {
-        width: 90px;
-
-    }
-    
-    .redesFooter {
-        grid-area: redesFooter;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    
-    .redes {
-        width: 40px;
-    }
-    
-    .navFooter {
-        grid-area: navFooter;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
     .ulFooter {
-        display: flex;
         gap: 20px;
     }
-    
-    .ulFooter li {
-        list-style: none;
-    }
-    
+
     .ulFooter li a {
-        text-decoration: none;
-        color: #f6f6f6;
-        font-size: 17px;  
-        font-family: "Montserrat";  
-        font-weight: 600;
-    }
-    
-    .buttonFooter {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        font-family: 'Montserrat Alternates';
         font-size: 17px;
-        color: #f6f6f6;
-        grid-area: buttonFooter;
     }
-    
-    .buttonFooter a {
-        text-decoration: none;
-        color: #f6f6f6;
+
+    /* ------------------------------MENU------------------------------ */
+    .menuMain {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: "menuText"
+                             "productContainer1"
+                             "productContainer2"
+                             "productContainer3"
+                             "productContainer4"
+                             "productContainer5"
+                             "productContainer6"
+                             "productContainer7"
+                             "productContainer8"
+                             "productContainer9"
+                             "productContainer10"
+                             "productContainer11"
+                             "productContainer12"
+                             "productContainer13"
+                             "productContainer14"
+                             "productContainer15"
+                             "productContainer16"
+                             "productContainer17"
+                             "productContainer18";
+        row-gap: 40px; 
+        margin-bottom: 70px;  
     }
+
 }
 
+/* QUERY PARA TABLETAS */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     /* ESTILOS GENERALES */
     .bodyIndex {
@@ -765,24 +668,16 @@ footer {
 
     /* NAV */
     header {
-        grid-area: header;
-        background-color: #368ca7;
         padding: 20px;
-        height: auto; 
     }
 
     nav {
-        display: flex;
         flex-direction: column;
     }
 
     #mainLogo {
         display: flex;
         justify-content: center;
-    }
-
-    .logo {
-        width: 60px;
     }
 
     nav ul  {
@@ -794,82 +689,25 @@ footer {
         gap: 9px;
     }
     
-    nav ul li {
-        list-style: none; 
-    }
-    
-    nav ul li a {
-        text-decoration: none;
-        font-weight: 600;
-        color: rgb(255, 248, 241);
-        font-family: 'Montserrat';
-        
-    }
-
     /*HERO SECTION*/
-    .inicioMain {
-        background-color: rgb(255, 248, 241);
-    }
-
     .heroSection {
-        display: flex;
-        flex-direction: column;
-        background-image: url('../imagenes/herobackground5mob.png');
         height: 90vh;
-        justify-content: center;
     }
 
-    .heroMain {
-        margin: 20px 0 15px 0;
-        padding: 0 10px; 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: flex-end;
-        text-align: center;
-
-    }
     .heroMain h1 {
         font-size: 45px;
-        padding-bottom: 10px 0;
-        color: rgb(255, 248, 241);
     }
 
     .heroMain h2 {
         font-size: 50px;
-        color: rgb(255, 248, 241);
     }
 
     .heroMain p {
         font-size: 30px;
-        padding: 40px 0;
-        color: rgb(255, 248, 241);
-        font-weight: 500;
-    }
-
-    .heroImage {
-        display: none;
     }
 
     .mainButton {
-        padding: 15px 20px;
-        background-color: #368ca7;
-        color: rgb(255, 248, 241);
-        font-family: 'Montserrat Alternates';
         font-size: 17px;
-        font-weight: 600;
-        border-radius: 25px;
-        border: none;
-        cursor: pointer;
-    }
-
-    .mainButton:hover {
-        padding: 12px 17px;
-        background-color: rgb(255, 248, 241);
-        color: #368ca7;
-        border: 3px solid;
-        border-color: #368ca7;
-        transition: .2s;
     }
 
     /* PRODUCT SECTION */
@@ -884,152 +722,11 @@ footer {
                              "producto5 producto6";
         row-gap: 70px;
     }
-
-    .productSection a {
-        text-decoration: none;
-    }
-
-    .producto1 {
-        grid-area: producto1;
-    }
-
-    .producto2 {
-        grid-area: producto2;
-    }
-
-    .producto3 {
-        grid-area: producto3;
-    }
-
-    .producto4 {
-        grid-area: producto4;
-    }
-
-    .producto5 {
-        grid-area: producto5;
-    }
-
-    .producto6 {
-        grid-area: producto6;
-    }
-
-    #productContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: stretch;
-        align-items: center;
-        padding: 20px 30px;
-    }
-
-    #productContainer a {
-        display: flex;
-        justify-content: center;
-    }
-
-    .productText {
-        grid-area: productText;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: 70px 0 30px 0;
-    }
-
-    .productTittle {
-        font-size: 40px;
-    }
-
-    .productSubtittle {
-        margin-top: 20px;
-        font-size: 25px;
-    }
-
-    .imageProduct {
-        border-radius: 13px;
-        width: 300px;
-        height: 400px;
-    }
-
-    .tittleProduct {
-        margin: 20px 0;
-        text-align: center;
-    }
-
-    .textProduct {
-        text-align: justify;
-        padding: 0 60px;
-    }
-
-
-    .loQuiero {
-        background-color: #368ca7;
-        color: rgb(255, 248, 241);
-        font-size: 15px;
-        font-weight: 600;
-        padding: 15px 30px;
-        margin-top: 40px;
-        border: none;
-        border-radius: 25px;
-        cursor: pointer; 
-    }
-
-    img {
-        width: 20px;
-    }
-
     
     /* VER MAS SECTION */
-    .verMas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-image: url('../imagenes/pexels-nappy-936000mob.png');
-        background-size: cover;
-        height: 400px;
-        margin-top: 40px;
-    }
-
-    .textMas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .textMas h2 {
-        color: #f6f6f6;
-        font-size: 50px;
-        margin: 30px 0;
-    }
-
-    .imageMas {
-        display: none;
-    }
-
-    .imageMas1 {
-        width: 700px;
-        border-radius: 20px;
-
-    }
-
+    
     .buttonMas {
-        padding: 15px 20px;
-        background-color: #368ca7;
-        color: rgb(255, 248, 241);
-        font-family: 'Montserrat Alternates';
-        font-size: 17px;
-        font-weight: 600;
-        border-radius: 25px;
-        border: none;
-        cursor: pointer;
-    }
-
-    .whatsapp {
-        width: 40px;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        padding: 0 10px 15px 0; 
+        font-size: 16px;
     }
 
     /* FOOTER */
@@ -1046,70 +743,31 @@ footer {
                              "buttonFooter buttonFooter";
     }
     
-    .logoFooter {
-        grid-area: logoFooter;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .logoFooter img {
-        width: 90px;
-
-    }
-    
-    .redesFooter {
-        grid-area: redesFooter;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    
-    .redes {
-        width: 40px;
-    }
-    
-    .navFooter {
-        grid-area: navFooter;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
     .ulFooter {
-        display: flex;
         gap: 20px;
     }
-    
-    .ulFooter li {
-        list-style: none;
-    }
-    
-    .ulFooter li a {
-        text-decoration: none;
-        color: #f6f6f6;
-        font-size: 17px;  
-        font-family: "Montserrat";  
-        font-weight: 600;
-    }
-    
-    .buttonFooter {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        font-family: 'Montserrat Alternates';
-        font-size: 17px;
-        color: #f6f6f6;
-        grid-area: buttonFooter;
-    }
-    
-    .buttonFooter a {
-        text-decoration: none;
-        color: #f6f6f6;
+
+    /* ------------------------------MENU------------------------------ */
+    .menuMain {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: "menuText menuText"
+                             "productContainer1 productContainer2"
+                             "productContainer3 productContainer4"
+                             "productContainer5 productContainer6"
+                             "productContainer7 productContainer8"
+                             "productContainer9 productContainer10"
+                             "productContainer11 productContainer12"
+                             "productContainer13 productContainer14"
+                             "productContainer15 productContainer16"
+                             "productContainer17 productContainer18";
+        row-gap: 30px;
+        margin-bottom: 50px;
     }
 }
 
+/* QUERY PARA NOTEBOOKS */
 @media screen and (min-width: 1024px) and (max-width: 1999px) {
      /* ESTILOS GENERALES */
      .bodyIndex {
@@ -1122,14 +780,7 @@ footer {
     }
 
     /* NAV */
-    header {
-        grid-area: header;
-        background-color: #368ca7;
-        height: auto; 
-    }
-
     nav {
-        display: flex;
         justify-content: space-between;
     }
     
@@ -1145,18 +796,11 @@ footer {
         margin-right: 80px;
     }
     
-    nav ul li {
-        list-style: none; 
-    }
-    
     nav ul li a {
-        text-decoration: none;
-        font-weight: 600;
-        color: rgb(255, 248, 241);
-        font-family: 'Montserrat';
         margin: 0px 10px;
         padding: 25px 20px;
     }
+
     
     nav ul li :hover {
         background-color: rgb(255, 248, 241);
@@ -1165,60 +809,24 @@ footer {
     }
 
     /*HERO SECTION*/
-    .inicioMain {
-        background-color: rgb(255, 248, 241);
-    }
-
     .heroSection {
-        display: flex;
-        flex-direction: column;
-        background-image: url('../imagenes/herobackground5mob.png');
         height: 95vh;
-        justify-content: center;
     }
 
-    .heroMain {
-        margin: 20px 0 15px 0;
-        padding: 0 10px; 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: flex-end;
-        text-align: center;
-
-    }
     .heroMain h1 {
         font-size: 60px;
-        padding-bottom: 10px 0;
-        color: rgb(255, 248, 241);
     }
 
     .heroMain h2 {
         font-size: 70px;
-        color: rgb(255, 248, 241);
     }
 
     .heroMain p {
         font-size: 25px;
-        padding: 40px 0;
-        color: rgb(255, 248, 241);
-        font-weight: 500;
-    }
-
-    .heroImage {
-        display: none;
     }
 
     .mainButton {
-        padding: 15px 20px;
-        background-color: #368ca7;
-        color: rgb(255, 248, 241);
-        font-family: 'Montserrat Alternates';
         font-size: 17px;
-        font-weight: 600;
-        border-radius: 25px;
-        border: none;
-        cursor: pointer;
     }
 
     .mainButton:hover {
@@ -1242,93 +850,6 @@ footer {
         row-gap: 70px;
     }
 
-    .productSection a {
-        text-decoration: none;
-    }
-
-    .producto1 {
-        grid-area: producto1;
-    }
-
-    .producto2 {
-        grid-area: producto2;
-    }
-
-    .producto3 {
-        grid-area: producto3;
-    }
-
-    .producto4 {
-        grid-area: producto4;
-    }
-
-    .producto5 {
-        grid-area: producto5;
-    }
-
-    .producto6 {
-        grid-area: producto6;
-    }
-
-    #productContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: stretch;
-        align-items: center;
-        padding: 20px 10px;
-    }
-
-    #productContainer a {
-        display: flex;
-        justify-content: center;
-    }
-
-    .productText {
-        grid-area: productText;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: 70px 0 30px 0;
-    }
-
-    .productTittle {
-        font-size: 55px;
-    }
-
-    .productSubtittle {
-        margin-top: 20px;
-        font-size: 35px;
-    }
-
-    .imageProduct {
-        border-radius: 13px;
-        width: 300px;
-        height: 400px;
-    }
-
-    .tittleProduct {
-        margin: 20px 0;
-        text-align: center;
-    }
-
-    .textProduct {
-        text-align: justify;
-        padding: 0 30px;
-    }
-
-
-    .loQuiero {
-        background-color: #368ca7;
-        color: rgb(255, 248, 241);
-        font-size: 15px;
-        font-weight: 600;
-        padding: 15px 30px;
-        margin-top: 40px;
-        border: none;
-        border-radius: 25px;
-        cursor: pointer; 
-    }
-
     .loQuiero:hover {
         background-color: rgb(255, 248, 241);
         color: #368ca7;
@@ -1336,57 +857,10 @@ footer {
         border-color: #368ca7;
         transition: all .2s;
     }
-
-    img {
-        width: 20px;
-    }
-
     
     /* VER MAS SECTION */
-    .verMas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-image: url('../imagenes/pexels-nappy-936000mob.png');
-        background-size: cover;
-        height: 600px;
-        margin-top: 40px;
-    }
-
-    .textMas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .textMas h2 {
-        color: #f6f6f6;
-        font-size: 60px;
-        margin: 30px 0;
-    }
-
-    .imageMas {
-        display: none;
-    }
-
-    .imageMas1 {
-        width: 700px;
-        border-radius: 20px;
-
-    }
-
     .buttonMas {
-        padding: 15px 20px;
-        background-color: #368ca7;
-        color: rgb(255, 248, 241);
-        font-family: 'Montserrat Alternates';
         font-size: 17px;
-        font-weight: 600;
-        border-radius: 25px;
-        border: none;
-        cursor: pointer;
     }
 
     .buttonMas:hover {
@@ -1396,14 +870,6 @@ footer {
         border: 3px solid;
         border-color: #368ca7;
         transition: .2s;
-    }
-
-    .whatsapp {
-        width: 50px;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        padding: 0 10px 15px 0; 
     }
 
     /* FOOTER */
@@ -1420,70 +886,30 @@ footer {
                              "buttonFooter buttonFooter";
     }
     
-    .logoFooter {
-        grid-area: logoFooter;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .logoFooter img {
-        width: 90px;
-    }
-    
-    .redesFooter {
-        grid-area: redesFooter;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    
-    .redes {
-        width: 40px;
-    }
-    
     .navFooter {
-        grid-area: navFooter;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
         margin-right: 10%;
     }
     
     .ulFooter {
-        display: flex;
         gap: 30px;
     }
-    
-    .ulFooter li {
-        list-style: none;
-    }
-    
-    .ulFooter li a {
-        text-decoration: none;
-        color: #f6f6f6;
-        font-size: 17px;  
-        font-family: "Montserrat";  
-        font-weight: 600;
-    }
-    
-    .buttonFooter {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        font-family: 'Montserrat Alternates';
-        font-size: 17px;
-        color: #f6f6f6;
-        grid-area: buttonFooter;
-    }
-    
-    .buttonFooter a {
-        text-decoration: none;
-        color: #f6f6f6;
+
+    /* --------------------------------MENU---------------------------- */
+    .menuMain {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        grid-template-areas: "menuText menuText menuText"
+                             "productContainer1 productContainer2 productContainer3"
+                             "productContainer4 productContainer5 productContainer6"
+                             "productContainer7 productContainer8 productContainer9" "productContainer10 productContainer11 productContainer12"
+                             "productContainer13 productContainer14 productContainer15" "productContainer16 productContainer17 productContainer18";
+        row-gap: 50px;
+        margin-bottom: 30px;
     }
 }
 
+/* QUERY PARA PANTALLAS GRANDES */
 @media screen and (min-width: 1200px) {
     /* ESTILOS GENERALES */
     .bodyIndex {
@@ -1496,14 +922,7 @@ footer {
     }
 
     /* NAV */
-    header {
-        grid-area: header;
-        background-color: #368ca7;
-        height: auto; 
-    }
-
     nav {
-        display: flex;
         justify-content: space-between;
     }
     
@@ -1519,15 +938,7 @@ footer {
         margin-right: 80px;
     }
     
-    nav ul li {
-        list-style: none; 
-    }
-    
     nav ul li a {
-        text-decoration: none;
-        font-weight: 600;
-        color: rgb(255, 248, 241);
-        font-family: 'Montserrat';
         margin: 0px 10px;
         padding: 25px 20px;
     }
@@ -1539,60 +950,24 @@ footer {
     }
 
     /*HERO SECTION*/
-    .inicioMain {
-        background-color: rgb(255, 248, 241);
-    }
-
     .heroSection {
-        display: flex;
-        flex-direction: column;
-        background-image: url('../imagenes/herobackground5mob.png');
         height: 95vh;
-        justify-content: center;
     }
 
-    .heroMain {
-        margin: 20px 0 15px 0;
-        padding: 0 10px; 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: flex-end;
-        text-align: center;
-
-    }
     .heroMain h1 {
         font-size: 60px;
-        padding-bottom: 10px 0;
-        color: rgb(255, 248, 241);
     }
 
     .heroMain h2 {
         font-size: 70px;
-        color: rgb(255, 248, 241);
     }
 
     .heroMain p {
         font-size: 25px;
-        padding: 40px 0;
-        color: rgb(255, 248, 241);
-        font-weight: 500;
-    }
-
-    .heroImage {
-        display: none;
     }
 
     .mainButton {
-        padding: 15px 20px;
-        background-color: #368ca7;
-        color: rgb(255, 248, 241);
-        font-family: 'Montserrat Alternates';
         font-size: 17px;
-        font-weight: 600;
-        border-radius: 25px;
-        border: none;
-        cursor: pointer;
     }
 
     .mainButton:hover {
@@ -1616,93 +991,6 @@ footer {
         row-gap: 70px;
     }
 
-    .productSection a {
-        text-decoration: none;
-    }
-
-    .producto1 {
-        grid-area: producto1;
-    }
-
-    .producto2 {
-        grid-area: producto2;
-    }
-
-    .producto3 {
-        grid-area: producto3;
-    }
-
-    .producto4 {
-        grid-area: producto4;
-    }
-
-    .producto5 {
-        grid-area: producto5;
-    }
-
-    .producto6 {
-        grid-area: producto6;
-    }
-
-    #productContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: stretch;
-        align-items: center;
-        padding: 20px 20px;
-    }
-
-    #productContainer a {
-        display: flex;
-        justify-content: center;
-    }
-
-    .productText {
-        grid-area: productText;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: 70px 0 30px 0;
-    }
-
-    .productTittle {
-        font-size: 55px;
-    }
-
-    .productSubtittle {
-        margin-top: 20px;
-        font-size: 35px;
-    }
-
-    .imageProduct {
-        border-radius: 13px;
-        width: 300px;
-        height: 400px;
-    }
-
-    .tittleProduct {
-        margin: 20px 0;
-        text-align: center;
-    }
-
-    .textProduct {
-        text-align: justify;
-        padding: 0 30px;
-    }
-
-
-    .loQuiero {
-        background-color: #368ca7;
-        color: rgb(255, 248, 241);
-        font-size: 15px;
-        font-weight: 600;
-        padding: 15px 30px;
-        margin-top: 40px;
-        border: none;
-        border-radius: 25px;
-        cursor: pointer; 
-    }
-
     .loQuiero:hover {
         background-color: rgb(255, 248, 241);
         color: #368ca7;
@@ -1710,53 +998,10 @@ footer {
         border-color: #368ca7;
         transition: all .2s;
     }
-
     
     /* VER MAS SECTION */
-    .verMas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-image: url('../imagenes/pexels-nappy-936000mob.png');
-        background-size: cover;
-        height: 800px;
-        margin-top: 40px;
-    }
-
-    .textMas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .textMas h2 {
-        color: #f6f6f6;
-        font-size: 60px;
-        margin: 30px 0;
-    }
-
-    .imageMas {
-        display: none;
-    }
-
-    .imageMas1 {
-        width: 700px;
-        border-radius: 20px;
-
-    }
-
     .buttonMas {
-        padding: 15px 20px;
-        background-color: #368ca7;
-        color: rgb(255, 248, 241);
-        font-family: 'Montserrat Alternates';
         font-size: 17px;
-        font-weight: 600;
-        border-radius: 25px;
-        border: none;
-        cursor: pointer;
     }
 
     .buttonMas:hover {
@@ -1766,14 +1011,6 @@ footer {
         border: 3px solid;
         border-color: #368ca7;
         transition: .2s;
-    }
-
-    .whatsapp {
-        width: 50px;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        padding: 0 10px 15px 0; 
     }
 
     /* FOOTER */
@@ -1790,66 +1027,25 @@ footer {
                              "buttonFooter buttonFooter";
     }
     
-    .logoFooter {
-        grid-area: logoFooter;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .logoFooter img {
-        width: 90px;
-    }
-    
-    .redesFooter {
-        grid-area: redesFooter;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    
-    .redes {
-        width: 40px;
-    }
-    
     .navFooter {
-        grid-area: navFooter;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
         margin-right: 10%;
     }
     
     .ulFooter {
-        display: flex;
         gap: 30px;
     }
-    
-    .ulFooter li {
-        list-style: none;
-    }
-    
-    .ulFooter li a {
-        text-decoration: none;
-        color: #f6f6f6;
-        font-size: 17px;  
-        font-family: "Montserrat";  
-        font-weight: 600;
-    }
-    
-    .buttonFooter {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        font-family: 'Montserrat Alternates';
-        font-size: 17px;
-        color: #f6f6f6;
-        grid-area: buttonFooter;
-    }
-    
-    .buttonFooter a {
-        text-decoration: none;
-        color: #f6f6f6;
+
+    /* --------------------------------MENU---------------------------- */
+    .menuMain {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        grid-template-areas: "menuText menuText menuText"
+                             "productContainer1 productContainer2 productContainer3"
+                             "productContainer4 productContainer5 productContainer6"
+                             "productContainer7 productContainer8 productContainer9" "productContainer10 productContainer11 productContainer12"
+                             "productContainer13 productContainer14 productContainer15" "productContainer16 productContainer17 productContainer18";
+        row-gap: 50px;
+        margin-bottom: 30px;
     }
 }
