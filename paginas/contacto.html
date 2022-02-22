@@ -8,39 +8,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Montserrat:wght@400;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../imagenes/ab-fav.ico" type="image/x-icon">
     <title>Contacto</title>
 </head>
 <body>
+
+    <!-- CÓDIGO NAV -->
     <header>
         <nav>
-            <a><img class="logo" src="../imagenes/ab-ice5.png" alt="logo"></a>               
+            <a id="mainLogo"><img class="logo" src="../imagenes/ab-ice5.png" alt="logo"></a>               
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="menu.html">Menú</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="conocenos.html">Conócenos</a></li>
                 <li><a href="ubicaciones.html">Ubicaciones</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>  
         </nav>
     </header>
 
+    <!-- CÓDIGO CONTACTO -->
     <main class="contactoMain">
-        <section class="contactoText">
-            <h1 class="contactoTittle">Nos gusta escucharte</h1>
-            <h2 class="contactoSubtittle">Contáctanos</h2>
-        </section>
 
-        <section>
-            <div class="contactoFormulario">
-                <form  class="contactoFlex" action="">
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-                    <input type="email" name="email" id="email" placeholder="Correo electrónico">
-                    <input type="number" name="telefono" id="telefono" placeholder="Teléfono">
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Déjanos tus comentarios o dudas aquí"></textarea>
-                    <input type="submit" name="enviar" id="enviar">
-                </form>
+        <section class="contactoGrid">
+            <div class="contactoText">
+                <h1 class="contactoTittle">Nos gusta escucharte</h1>
+                <h2 class="contactoSubtittle">Contáctanos</h2>
             </div>
+    
+            <form  class="contactoForm" action="">
+                <div class="form1">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </div>
+                
+                <div class="form2">
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                </div>
+                
+                <div class="form3">
+                    <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                </div>
+                
+                <div class="form4">
+                    <input type="number" name="telefono" id="telefono" placeholder="Teléfono">
+                </div>
+                
+                <div class="form5">
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Déjanos tus comentarios o dudas aquí"></textarea>
+                </div>
+                <div class="form6">
+                    <button type="submit" name="enviar" id="enviar">¡Contáctenme!</button>
+                </div>
+            </form>
         </section>
 
         <section class="whatsappContainer">
@@ -49,24 +68,43 @@
 
     </main>
 
+    <!-- CÓDIGO FOOTER -->
     <footer>
-        <section class="sectionFooter">
-            <div>
-                <img class="logoFooter" src="../imagenes/ab-ice5.png" alt="">
-            </div>
-    
-            <div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur possimus tempore esse voluptatibus quasi, temporibus quas dolor, accusantium asperiores deleniti fuga a harum rerum excepturi? Maxime voluptas autem ratione beatae.</p>
-            </div>
-    
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tenetur, cum quis ad reprehenderit quas nostrum, quae officia exercitationem tempore atque fugit hic esse eum excepturi quod fugiat optio saepe.</p>
-            </div>
-        </section>
+        <div class="logoFooter">
+            <a href="index.html"><img src="../imagenes/ab-ice-logoo.png" alt=""></a>
+        </div>
 
-        <section class="buttonFooter">
+        <div class="redesFooter">
+            <div>
+                <a href=""><img class="redes" src="../imagenes/instagram-brands.png" alt=""></a>
+            </div>
+
+            <div>
+                <a href=""><img class="redes" src="../imagenes/facebook.png" alt=""></a>
+            </div>
+
+            <div>
+                <a href=""><img class="redes" src="../imagenes/youtube-brands.png" alt=""></a>
+            </div>
+
+            <div>
+                <a href=""><img class="redes" src="../imagenes/whatsapp-brands.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="navFooter">             
+            <ul class="ulFooter">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="conocenos.html">Conócenos</a></li>
+                <li><a href="ubicaciones.html">Ubicaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="buttonFooter">
             <p>Sitio web desarollado por <a href="#">Brian González</a></p>
-        </section>
+        </div>
     </footer>
 </body>
 </html>

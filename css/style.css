@@ -16,7 +16,7 @@ header {
     grid-area: header;
     background-color: #368ca7;
     padding: 3px;
-    height: auto; 
+    height: auto;
 }
 
 main {
@@ -38,7 +38,7 @@ nav {
 }
 
 nav ul li {
-    list-style: none; 
+    list-style: none;
 }
 
 nav ul li a {
@@ -59,7 +59,7 @@ nav ul li a {
 }
 .heroMain {
     margin: 20px 0 15px 0;
-    padding: 0 10px; 
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,7 +177,7 @@ nav ul li a {
     margin-top: 40px;
     border: none;
     border-radius: 25px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 /* GENERALES VER MAS */
@@ -222,7 +222,7 @@ nav ul li a {
     position: fixed;
     bottom: 0;
     right: 0;
-    padding: 0 10px 15px 0; 
+    padding: 0 10px 15px 0;
 }
 
 /* GENERALES FOOTER */
@@ -247,7 +247,7 @@ nav ul li a {
 
 .redes {
     width: 40px;
-    
+
 }
 
 .navFooter {
@@ -270,8 +270,8 @@ nav ul li a {
 .ulFooter li a {
      text-decoration: none;
      color: #f6f6f6;
-     font-size: 20px;  
-     font-family: "Montserrat";  
+     font-size: 20px;
+     font-family: "Montserrat";
      font-weight: 600;
 }
 
@@ -292,7 +292,7 @@ nav ul li a {
 }
 
 
-/* -----------------------------MENU------------------------------ */
+/* -------------------------- GENERALES MENU ---------------------------- */
 /* GENERALES MENU */
 #productContainer {
     display: flex;
@@ -389,6 +389,203 @@ nav ul li a {
 }
 
 
+/* --------------------------- GENERALES NOSOTROS --------------------------- */
+/* GENERALES NOSOTROS */
+.conocenosText {
+    margin: 30px 0;
+    grid-area: conocenosText;
+}
+
+.conocenosTittle {
+    text-align: center;
+}
+
+#conocenosP {
+    padding: 0 30px;
+    text-align: justify;
+}
+
+#conocenosI {
+    border-radius: 10px;
+}
+
+.cononenosP1 {
+    grid-area: conocenosP1;
+}
+
+.conocenosP2 {
+    grid-area: conocenosP2;
+}
+
+.conocenosP3 {
+    grid-area: conocenosP3;
+}
+
+.conocenosImage1 {
+    grid-area: conocenosImage1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conocenosImage2 {
+    grid-area: conocenosImage2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conocenosImage3 {
+    grid-area: conocenosImage3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------- GENERALES UBICACIONES ---------------------- */
+.ubicacionesText {
+    margin: 30px 0;
+    grid-area: ubicacionesText;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ubicacionesTittle {
+    text-align: center;
+}
+
+.ubicacionesSubtittle {
+    text-align: center;
+}
+
+.ubicaciones1 {
+    grid-area: ubicaciones1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ubicaciones2 {
+    grid-area: ubicaciones2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ubicaciones3 {
+    grid-area: ubicaciones3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------------------- GENERALES CONTACTO ------------------------  */
+.contactoText {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactoTittle, .contactoSubtittle {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.contactoGrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactoForm input, textarea {
+    font-family: 'Montserrat';
+    border-radius: 20px;
+    background-color: rgb(255, 248, 241);
+    color: #368ca7;
+    font-weight: 600;
+    border: 3px solid;
+    border-color: #368ca7;
+}
+
+.form1 {
+    grid-area: form1;
+    display: flex;
+    justify-content: center;
+}
+
+#nombre {
+    text-align: center;
+}
+
+.form2 {
+    grid-area: form2;
+    display: flex;
+    justify-content: center;
+}
+
+#apellido {
+    text-align: center;
+}
+
+.form3 {
+    grid-area: form3;
+    display: flex;
+    justify-content: center;
+}
+
+#email {
+    text-align: center;
+}
+
+.form4 {
+    grid-area: form4;
+    display: flex;
+    justify-content: center;
+}
+
+#telefono {
+    text-align: center;
+}
+
+.form5 {
+    grid-area: form5;
+    display: flex;
+    justify-content: center;
+}
+
+#mensaje {
+    text-align: center;
+    font-size: 13px;
+}
+
+.form6 {
+    grid-area: form6;
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+#enviar {
+    font-weight: 600;
+    padding: 12px 17px;
+    background-color: rgb(255, 248, 241);
+    color: #368ca7;
+    border: 3px solid;
+    border-color: #368ca7;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
 /* QUERY PARA MOVILES */
 @media screen and (min-width: 320px) and (max-width: 599px) {
     /* --------------------------INDEX------------------------ */
@@ -404,7 +601,7 @@ nav ul li a {
 
     /* NAV */
     header {
-        padding: 20px; 
+        padding: 20px;
     }
 
     nav {
@@ -424,7 +621,7 @@ nav ul li a {
         justify-content: space-evenly;
         gap: 9px;
     }
-    
+
 
     /*HERO SECTION*/
     .heroSection {
@@ -440,7 +637,7 @@ nav ul li a {
     }
 
     .heroMain p {
-        font-size: 25px;  
+        font-size: 25px;
     }
 
     .mainButton {
@@ -454,11 +651,11 @@ nav ul li a {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto auto auto;
         grid-template-areas: "productText"
-                             "producto1" 
-                             "producto2" 
+                             "producto1"
+                             "producto2"
                              "producto3"
-                             "producto4" 
-                             "producto5" 
+                             "producto4"
+                             "producto5"
                              "producto6";
         row-gap: 70px;
     }
@@ -516,8 +713,98 @@ nav ul li a {
                              "productContainer16"
                              "productContainer17"
                              "productContainer18";
-        row-gap: 40px; 
+        row-gap: 40px;
         margin-bottom: 70px;
+    }
+
+    /* --------------------------CONOCENOS------------------------- */
+    .conocenosGrid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas: "conocenosText"
+                             "conocenosImage1"
+                             "conocenosP1"
+                             "conocenosImage2"
+                             "conocenosP2"
+                             "conocenosImage3"
+                             "conocenosP3";
+        row-gap: 40px;
+        margin-bottom: 50px;
+    }
+
+    .conocenosTittle {
+        font-size: 30px;
+    }
+
+    #conocenosI {
+        width: 300px;
+    }
+
+    /* --------------------- UBICACIONES --------------------- */
+    .ubicacionesMain {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "ubicacionesText"
+                             "ubicaciones1"
+                             "ubicaciones2"
+                             "ubicaciones3";
+        row-gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    .ubicacionesMap {
+        width: 300px;
+    }
+
+    .ubicacionesTittle {
+        font-size: 40px;
+        margin: 20px 0;
+    }
+
+    .ubicacionesSubtittle {
+        font-size: 25px;
+        margin: 15px 0;
+    }
+
+    .ubicacionesSucursal {
+        margin: 20px 0 20px 0;
+    }
+
+    /* ------------------------- CONTACTO --------------------- */
+    .contactoTittle {
+        font-size: 30px;
+    }
+
+    .contactoSubtittle {
+        font-size: 25px;
+    }
+
+    .contactoForm {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "form1"
+                             "form2"
+                             "form3"
+                             "form4"
+                             "form5"
+                             "form6";
+        row-gap: 15px;
+        margin-bottom: 50px;
+    }
+
+    .contactoForm {
+        height: auto;
+    }
+
+    #nombre, #apellido, #email, #telefono {
+        padding: 10px 35px;
+    }
+
+    #mensaje {
+        margin: 10px 10px;
     }
 }
 
@@ -526,7 +813,7 @@ nav ul li a {
     /* ESTILOS GENERALES */
     .bodyIndex {
         display: grid;
-        grid-template-columns: 50% 50%; 
+        grid-template-columns: 50% 50%;
         grid-template-rows: auto auto auto;
         grid-template-areas: "header header"
                              "main main"
@@ -584,15 +871,15 @@ nav ul li a {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto auto auto;
         grid-template-areas: "productText"
-                             "producto1" 
-                             "producto2" 
+                             "producto1"
+                             "producto2"
                              "producto3"
-                             "producto4" 
-                             "producto5" 
+                             "producto4"
+                             "producto5"
                              "producto6";
         row-gap: 70px;
     }
- 
+
     /* VER MAS SECTION */
     .buttonMas {
         font-size: 15px;
@@ -615,7 +902,7 @@ nav ul li a {
                              "logoFooter navFooter"
                              "buttonFooter buttonFooter";
     }
-    
+
     .ulFooter {
         gap: 20px;
     }
@@ -648,8 +935,99 @@ nav ul li a {
                              "productContainer16"
                              "productContainer17"
                              "productContainer18";
-        row-gap: 40px; 
-        margin-bottom: 70px;  
+        row-gap: 40px;
+        margin-bottom: 70px;
+    }
+
+     /* --------------------------CONOCENOS------------------------- */
+     .conocenosGrid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas: "conocenosText"
+                             "conocenosImage1"
+                             "conocenosP1"
+                             "conocenosImage2"
+                             "conocenosP2"
+                             "conocenosImage3"
+                             "conocenosP3";
+        row-gap: 40px;
+        margin-bottom: 50px;
+    }
+
+    .conocenosTittle {
+        font-size: 40px;
+    }
+
+    #conocenosI {
+        width: 400px;
+    }
+
+    /* --------------------- UBICACIONES --------------------- */
+    .ubicacionesMain {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "ubicacionesText"
+                             "ubicaciones1"
+                             "ubicaciones2"
+                             "ubicaciones3";
+        row-gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    .ubicacionesMap {
+        width: 500px;
+    }
+
+    .ubicacionesTittle {
+        font-size: 40px;
+        margin: 20px 0;
+    }
+
+    .ubicacionesSubtittle {
+        font-size: 25px;
+        margin: 15px 0;
+    }
+
+    .ubicacionesSucursal {
+        margin: 20px 0 20px 0;
+    }
+
+    /* ------------------------- CONTACTO --------------------- */
+    .contactoTittle {
+        font-size: 40px;
+    }
+
+    .contactoSubtittle {
+        font-size: 30px;
+    }
+
+    .contactoForm {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "form1"
+                             "form2"
+                             "form3"
+                             "form4"
+                             "form5"
+                             "form6";
+        row-gap: 15px;
+        margin-bottom: 50px;
+    }
+
+    .contactoForm {
+        height: auto;
+    }
+
+    #nombre, #apellido, #email, #telefono {
+        padding: 10px 50px;
+    }
+
+    #mensaje {
+        margin: 10px 0px;
+        font-size: 15px;
     }
 
 }
@@ -659,7 +1037,7 @@ nav ul li a {
     /* ESTILOS GENERALES */
     .bodyIndex {
         display: grid;
-        grid-template-columns: 50% 50%; 
+        grid-template-columns: 50% 50%;
         grid-template-rows: auto auto auto;
         grid-template-areas: "header header"
                              "main main"
@@ -688,7 +1066,7 @@ nav ul li a {
         justify-content: space-evenly;
         gap: 9px;
     }
-    
+
     /*HERO SECTION*/
     .heroSection {
         height: 90vh;
@@ -717,14 +1095,14 @@ nav ul li a {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto auto;
         grid-template-areas: "productText productText"
-                             "producto1 producto2" 
-                             "producto3 producto4" 
+                             "producto1 producto2"
+                             "producto3 producto4"
                              "producto5 producto6";
         row-gap: 70px;
     }
-    
+
     /* VER MAS SECTION */
-    
+
     .buttonMas {
         font-size: 16px;
     }
@@ -742,7 +1120,7 @@ nav ul li a {
                              "logoFooter navFooter"
                              "buttonFooter buttonFooter";
     }
-    
+
     .ulFooter {
         gap: 20px;
     }
@@ -765,6 +1143,93 @@ nav ul li a {
         row-gap: 30px;
         margin-bottom: 50px;
     }
+
+    /* --------------------------CONOCENOS------------------------- */
+    .conocenosGrid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "conocenosText conocenosText"
+                             "conocenosImage1 conocenosP1"
+                             "conocenosP2 conocenosImage2"
+                             "conocenosImage3 conocenosP3";
+        row-gap: 60px;
+        margin-bottom: 80px;
+    }
+
+    .conocenosTittle {
+        font-size: 40px;
+    }
+
+    #conocenosI {
+        width: 400px;
+    }
+
+    /* --------------------- UBICACIONES --------------------- */
+    .ubicacionesMain {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "ubicacionesText ubicacionesText"
+                             "ubicaciones1 ubicaciones2"
+                             "ubicaciones3 ubicaciones3";
+        row-gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    .ubicacionesMap {
+        width: 300px;
+    }
+
+    .ubicacionesTittle {
+        font-size: 40px;
+        margin: 20px 0;
+    }
+
+    .ubicacionesSubtittle {
+        font-size: 25px;
+        margin: 15px 0;
+    }
+
+    .ubicacionesSucursal {
+        margin: 20px 0 20px 0;
+    }
+
+    /* ------------------------- CONTACTO --------------------- */
+    .contactoTittle {
+        font-size: 40px;
+    }
+
+    .contactoSubtittle {
+        font-size: 30px;
+    }
+
+    .contactoForm {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "form1"
+                             "form2"
+                             "form3"
+                             "form4"
+                             "form5"
+                             "form6";
+        row-gap: 15px;
+        margin-bottom: 50px;
+    }
+
+    .contactoForm {
+        height: auto;
+    }
+
+    #nombre, #apellido, #email, #telefono {
+        padding: 10px 50px;
+    }
+
+    #mensaje {
+        margin: 10px 0px;
+        font-size: 15px;
+    }
 }
 
 /* QUERY PARA NOTEBOOKS */
@@ -783,25 +1248,25 @@ nav ul li a {
     nav {
         justify-content: space-between;
     }
-    
+
     .logo {
         width: 70px;
         margin-left: 60px;
         margin-top: 2px;
     }
-    
+
     nav ul  {
         display: flex;
         align-items: center;
         margin-right: 80px;
     }
-    
+
     nav ul li a {
         margin: 0px 10px;
         padding: 25px 20px;
     }
 
-    
+
     nav ul li :hover {
         background-color: rgb(255, 248, 241);
         color: #368ca7;
@@ -845,7 +1310,7 @@ nav ul li a {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto auto;
         grid-template-areas: "productText productText productText"
-                             "producto1 producto2 producto3" 
+                             "producto1 producto2 producto3"
                              "producto4 producto5 producto6";
         row-gap: 70px;
     }
@@ -857,7 +1322,7 @@ nav ul li a {
         border-color: #368ca7;
         transition: all .2s;
     }
-    
+
     /* VER MAS SECTION */
     .buttonMas {
         font-size: 17px;
@@ -885,11 +1350,11 @@ nav ul li a {
                              "logoFooter navFooter"
                              "buttonFooter buttonFooter";
     }
-    
+
     .navFooter {
         margin-right: 10%;
     }
-    
+
     .ulFooter {
         gap: 30px;
     }
@@ -906,6 +1371,94 @@ nav ul li a {
                              "productContainer13 productContainer14 productContainer15" "productContainer16 productContainer17 productContainer18";
         row-gap: 50px;
         margin-bottom: 30px;
+    }
+
+     /* --------------------------CONOCENOS------------------------- */
+     .conocenosGrid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "conocenosText conocenosText"
+                             "conocenosImage1 conocenosP1"
+                             "conocenosP2 conocenosImage2"
+                             "conocenosImage3 conocenosP3";
+        row-gap: 60px;
+        margin-bottom: 80px;
+    }
+
+    .conocenosTittle {
+        font-size: 40px;
+    }
+
+    #conocenosI {
+        width: 500px;
+    }
+
+     /* --------------------- UBICACIONES --------------------- */
+     .ubicacionesMain {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "ubicacionesText ubicacionesText ubicacionesText"
+                             "ubicaciones1 ubicaciones2 ubicaciones3";
+        row-gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    .ubicacionesMap {
+        width: 350px;
+    }
+
+    .ubicacionesTittle {
+        font-size: 40px;
+        margin: 20px 0;
+    }
+
+    .ubicacionesSubtittle {
+        font-size: 25px;
+        margin: 15px 0;
+    }
+
+    .ubicacionesSucursal {
+        margin: 20px 0 20px 0;
+    }
+
+    /* ------------------------- CONTACTO --------------------- */
+    .contactoTittle {
+        font-size: 40px;
+    }
+
+    .contactoSubtittle {
+        font-size: 30px;
+    }
+
+    .contactoForm {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "form1" 
+                             "form2"
+                             "form3"
+                             "form4"
+                             "form5"
+                             "form6";
+        row-gap: 10px;
+        column-gap: 40px;
+        margin-bottom: 50px;
+    }
+
+    .contactoForm {
+        height: auto;
+    }
+
+    #nombre, #apellido, #email, #telefono {
+        padding: 10px 100px;
+    }
+
+    #mensaje {
+        margin: 10px 0px;
+        padding: 0 60px;
+        font-size: 15px;
     }
 }
 
@@ -925,24 +1478,24 @@ nav ul li a {
     nav {
         justify-content: space-between;
     }
-    
+
     .logo {
         width: 70px;
         margin-left: 60px;
         margin-top: 2px;
     }
-    
+
     nav ul  {
         display: flex;
         align-items: center;
         margin-right: 80px;
     }
-    
+
     nav ul li a {
         margin: 0px 10px;
         padding: 25px 20px;
     }
-    
+
     nav ul li :hover {
         background-color: rgb(255, 248, 241);
         color: #368ca7;
@@ -986,7 +1539,7 @@ nav ul li a {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto auto;
         grid-template-areas: "productText productText productText"
-                             "producto1 producto2 producto3" 
+                             "producto1 producto2 producto3"
                              "producto4 producto5 producto6";
         row-gap: 70px;
     }
@@ -998,7 +1551,7 @@ nav ul li a {
         border-color: #368ca7;
         transition: all .2s;
     }
-    
+
     /* VER MAS SECTION */
     .buttonMas {
         font-size: 17px;
@@ -1026,11 +1579,11 @@ nav ul li a {
                              "logoFooter navFooter"
                              "buttonFooter buttonFooter";
     }
-    
+
     .navFooter {
         margin-right: 10%;
     }
-    
+
     .ulFooter {
         gap: 30px;
     }
@@ -1047,5 +1600,93 @@ nav ul li a {
                              "productContainer13 productContainer14 productContainer15" "productContainer16 productContainer17 productContainer18";
         row-gap: 50px;
         margin-bottom: 30px;
+    }
+
+    /* --------------------------CONOCENOS------------------------- */
+    .conocenosGrid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "conocenosText conocenosText"
+                             "conocenosImage1 conocenosP1"
+                             "conocenosP2 conocenosImage2"
+                             "conocenosImage3 conocenosP3";
+        row-gap: 60px;
+        margin-bottom: 80px;
+    }
+
+    .conocenosTittle {
+        font-size: 40px;
+    }
+
+    #conocenosI {
+        width: 500px;
+    }
+
+    /* --------------------- UBICACIONES --------------------- */
+    .ubicacionesMain {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "ubicacionesText ubicacionesText ubicacionesText"
+                             "ubicaciones1 ubicaciones2 ubicaciones3";
+        row-gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    .ubicacionesMap {
+        width: 400px;
+    }
+
+    .ubicacionesTittle {
+        font-size: 40px;
+        margin: 20px 0;
+    }
+
+    .ubicacionesSubtittle {
+        font-size: 25px;
+        margin: 15px 0;
+    }
+
+    .ubicacionesSucursal {
+        margin: 20px 0 20px 0;
+    }
+
+    /* ------------------------- CONTACTO --------------------- */
+    .contactoTittle {
+        font-size: 40px;
+    }
+
+    .contactoSubtittle {
+        font-size: 30px;
+    }
+
+    .contactoForm {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "form1" 
+                             "form2"
+                             "form3"
+                             "form4"
+                             "form5"
+                             "form6";
+        row-gap: 10px;
+        column-gap: 40px;
+        margin-bottom: 50px;
+    }
+
+    .contactoForm {
+        height: auto;
+    }
+
+    #nombre, #apellido, #email, #telefono {
+        padding: 10px 100px;
+    }
+
+    #mensaje {
+        margin: 10px 0px;
+        padding: 0 60px;
+        font-size: 15px;
     }
 }
